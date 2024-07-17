@@ -1,0 +1,3 @@
+defer function executes the statement at the last
+originally the code is read line by line
+LIFO
