@@ -17,7 +17,7 @@ func main() {
 	input, _ := reader.ReadString('\n')
 	fmt.Println("Thank for the rating", input)
 
-	numrating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
+	numrating, err := strconv.ParseFloat(strings.TrimSpace(input), 64) //You use strconv here because input is originally a string (as all data read from the terminal is in string format). To perform numerical operations on this input (like calculations or comparisons), you need to convert it to a float. strconv.ParseFloat is the tool provided by Go to handle this conversion.
 
 	if err != nil {
 		fmt.Println(err)
